@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+/* ABOUT SECTION */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.about-content .text {
+    max-width: 600px;
+}
+
+.about-content .text h1 {
+    font-size: 2.5rem;
+}
+
+.about-content .text span {
+    color: white;
+}
+
+.about-content .roles {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.about-content .desc {
+    margin: 20px 0;
+}
+
+.about-content .btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* PHOTO */
+.photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+
+/* SKILLS */
+.skills {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills h2 span {
+    color: red;
+}
+
+.skill-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.skill-card img {
+    width: 60px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Image is clickable to upload a new one */
+}
+
+/* Hide the native file input so only the image is visible,
+   but keep it in the DOM so JavaScript can trigger it. */
+.skill-image-input {
+    display: none;
+}
+
+/* "SEE MORE" button inside each skill card (keeps existing layout and visual style minimal) */
+.see-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #111;
+    background-color: #f2f2e9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.see-more-btn:hover {
+    background-color: #ddd;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+}
+
+.contact h2 span {
+    color: red;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.contact-form {
+    background: #f2f2e9;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 2;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
